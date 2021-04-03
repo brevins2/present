@@ -19,16 +19,16 @@
 
     <tr *ngFor="let item of collection">
       <th>{{item.id}}</th>
-      <th>{{item.First_name}}</th>
-      <th>{{item.Second_name}}</th>
+      <th>{{item.firstName}}</th>
+      <th>{{item.secondName}}</th>
       <th>{{item.Sex}}</th>
-      <th>{{item.E_mail}}</th>
-      <th>{{item.Password}}</th>
-      <th>{{item.Street_Address}}</th>
-      <th>{{item.Employment_status}}</th>
-      <th>{{item.City}}</th>
-      <th>{{item.State}}</th>
-      <th>{{item.Zip}}</th>
+      <th>{{item.email}}</th>
+      <th>{{item.password}}</th>
+      <th>{{item.streetAddress}}</th>
+      <th>{{item.employmentStatus}}</th>
+      <th>{{item.city}}</th>
+      <th>{{item.state}}</th>
+      <th>{{item.zip}}</th>
       <th>
         <i (click)="deleteData(item.id)" id="delete" class="fa fa-trash" style="font-size:25px;color:red;"></i>&nbsp;&nbsp;&nbsp;
         <a routerLink="/update/{{item.id}}">

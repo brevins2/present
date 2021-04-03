@@ -1,13 +1,18 @@
 {
   "name": "present",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brevins2/present.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": " ng build  --prod  --base-href https://brevins2.github.io/present/ && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
